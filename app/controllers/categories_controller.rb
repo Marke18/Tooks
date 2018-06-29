@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+    http_basic_authenticate_with name: "tooks", password: "818"
   def index
     @categories = Category.all
   end

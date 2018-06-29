@@ -1,4 +1,5 @@
 class LinesController < ApplicationController
+    http_basic_authenticate_with name: "tooks", password: "818"
   def index
     @lines = Line.all
   end
