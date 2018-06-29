@@ -39,6 +39,15 @@
   padding-right: 3vh;
 }
 
+.acquisto a{
+  color:#112233;
+}
+
+.acquisto a:hover{
+  color:#41D1F2;
+  text-decoration: none;
+}
+
 .totale{
   height:6vh;
   text-align: right;
@@ -47,6 +56,10 @@
 
 .totale strong{
   color:#41D1F2;
+}
+
+.dati_acquisto{
+  min-height:30vh;
 }
 
 .sfondo_bordo2{
