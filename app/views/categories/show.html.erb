@@ -1,0 +1,28 @@
+
+<div class="new">
+
+  <p>
+    <strong>Nome:</strong>
+    <%= @category.nome_cat %>
+  </p>
+
+  <p>
+    <strong>Descrizione:</strong>
+    <%= @category.descr %>
+  </p>
+  <p>
+    <strong>Immagine1:</strong>
+    <%= @category.img1 %>
+  </p>
+
+</div>
+
+<div class="link"><strong>
+  <%= link_to 'Categorie', categories_path  %>
+  <%= link_to 'Nuova categoria', new_category_path %>
+  <%= link_to 'Modifica la categoria', edit_category_path(@category) %>
+  <%= link_to 'Elimina la categoria', category_path(@category),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+  </strong>
+</div>

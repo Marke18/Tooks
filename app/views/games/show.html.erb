@@ -1,0 +1,50 @@
+
+<div class="new">
+
+  <p>
+    <strong>Nome:</strong>
+    <%= @game.nome %>
+  </p>
+
+  <p>
+    <strong>Descrizione:</strong>
+    <%= @game.descr %>
+  </p>
+
+  <p>
+    <strong>Categoria:</strong>
+    <%= @game.category_id %>
+  </p>
+
+  <p>
+    <strong>Immagine1:</strong>
+    <%= @game.img1 %>
+  </p>
+
+  <p>
+    <strong>Immagine2:</strong>
+    <%= @game.img2%>
+  </p>
+
+  <p>
+    <strong>Immagine3:</strong>
+    <%= @game.img3 %>
+  </p>
+
+  <p>
+    <strong>Prezzo:</strong>
+    <%= @game.prezzo %>
+  </p>
+
+
+</div>
+
+<div class="link"><strong>
+  <%= link_to 'Giochi', games_path  %>
+  <%= link_to 'Nuovo gioco', new_game_path %>
+  <%= link_to 'Modifica il gioco', edit_game_path(@game) %>
+  <%= link_to 'Elimina il gioco', game_path(@game),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+  </strong>
+</div>

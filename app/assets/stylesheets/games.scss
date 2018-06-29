@@ -1,0 +1,53 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.new{
+  padding-top:10vh;
+  padding-left:3vh;
+  padding-right:3vh;
+  min-height:88vh;
+}
+
+.link{
+  padding-left:3vh;
+  padding-right:3vh;
+  height:6vh;
+}
+
+.link a{
+  color:#000000;
+  font-size:20px;
+  padding:1vh;
+}
+
+.link a:hover{
+  color:#41D1F2;
+  text-decoration: none;
+}
+
+.new a{
+  color:#112233;
+  font-size:20px;
+  padding:1vh;
+}
+
+.new a:hover{
+  color:#41D1F2;
+  text-decoration: none;
+}
+
+
+th{
+  border-bottom:2px solid #112233;
+  padding:2px;
+  padding-left: 1vh;
+
+}
+
+td{
+  border-bottom:1.5px solid #112233;
+  padding:2px;
+  padding-left: 1vh;
+}

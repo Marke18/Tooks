@@ -1,0 +1,17 @@
+
+<%= form_with scope: :category, url: categories_path, local: true do |form| %>
+
+<% end %>
+
+<div class="new">
+  <h1>Aggiungi una categoria</h1>
+
+  <%= render 'form' %>
+
+</div>
+
+
+<div class="link"><strong>
+  <%= link_to 'Categorie', categories_path  %>
+  </strong>
+</div>

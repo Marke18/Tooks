@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>Tooks</title>
+    <!-- Required meta tags -->
+    <link rel="icon" type="image/jpg" href="/assets/tooks.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class=" navbar navbar-expand-md navbar-black bg-black fixed-top barra">
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+          aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fa fa-bars fa-1x"></i></span></button>
+
+      <div class=" hamburger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <a class=" navbar-brand">
+        <h2><%= link_to 'Tooks', home_index_path %></h2>
+        <%= image_tag "tooks.jpg", size: "40x40" %>
+      </a>
+
+      <div class=" collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" style="padding-top:0px;"><h4><%= link_to 'Carrello'%></h4></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" style="padding-top:0px;"><h4><%= link_to 'Accedi'%></h4></a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+
+
+    <!-- Collapsible content -->
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <div class="row">
+        <div class="col-sm-3 menu_hamburger" >
+          <h3>Categorie</h3>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Sport
+              <span class="badge badge-primary badge-pill">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Azione
+              <span class="badge badge-primary badge-pill">27</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Avventura
+              <span class="badge badge-primary badge-pill">51</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Sparatutto
+              <span class="badge badge-primary badge-pill">23</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Horror
+              <span class="badge badge-primary badge-pill">16</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Istruzione
+              <span class="badge badge-primary badge-pill">11</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Strategia
+              <span class="badge badge-primary badge-pill">18</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <%= yield %>
+
+    <div class="footer"></div>
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

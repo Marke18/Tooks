@@ -1,0 +1,71 @@
+<%= form_with model: @game, local: true do |form| %>
+
+  <% if @game.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@game.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @game.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row with_zero_margin">
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :nome %><br>
+        <%= form.text_field :nome %>
+      </p>
+    </div>
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :descrizione %><br>
+        <%= form.text_area :descr %>
+      </p>
+    </div>
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :categoria %><br>
+        <%= form.text_area :category_id %>
+      </p>
+    </div>
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :immagine1 %><br>
+        <%= form.text_area :img1 %>
+      </p>
+    </div>
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :immagine2 %><br>
+        <%= form.text_area :img2 %>
+      </p>
+    </div>
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :immagine3 %><br>
+        <%= form.text_area :img3 %>
+      </p>
+    </div>
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :prezzo %><br>
+        <%= form.text_area :prezzo %>
+      </p>
+    </div>
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>
+  </div>

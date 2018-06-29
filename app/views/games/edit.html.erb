@@ -1,0 +1,14 @@
+<%= form_with(model: @game, local: true) do |form| %>
+
+<% end %>
+
+<div class="new">
+  <h1>Modifica il gioco </h1>
+
+  <%= render 'form' %>
+</div>
+
+<div class="link"><strong>
+  <%= link_to 'Giochi', games_path  %>
+  </strong>
+</div>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome_cat: MyString
+  descr: MyText
+  img1: MyString
+
+two:
+  nome_cat: MyString
+  descr: MyText
+  img1: MyString

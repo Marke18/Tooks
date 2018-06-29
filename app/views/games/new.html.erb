@@ -1,0 +1,17 @@
+
+<%= form_with scope: :game, url: games_path, local: true do |form| %>
+
+<% end %>
+
+<div class="new">
+  <h1>Aggiungi un gioco</h1>
+
+  <%= render 'form' %>
+
+</div>
+
+
+<div class="link"><strong>
+  <%= link_to 'Giochi', games_path  %>
+  </strong>
+</div>

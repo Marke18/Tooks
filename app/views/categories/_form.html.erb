@@ -1,0 +1,43 @@
+<%= form_with model: @category, local: true do |form| %>
+
+  <% if @category.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@category.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @category.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row with_zero_margin">
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :nome_cat %><br>
+        <%= form.text_field :nome_cat %>
+      </p>
+    </div>
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :descrizione %><br>
+        <%= form.text_area :descr %>
+      </p>
+    </div>
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :immagine1 %><br>
+        <%= form.text_area :img1 %>
+      </p>
+    </div>
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>
+  </div>

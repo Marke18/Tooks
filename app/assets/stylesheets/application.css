@@ -1,0 +1,94 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body{
+  margin: 0px;
+  font-family: Ubuntu !important;
+}
+
+.barra{
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.barra h2{
+  margin-top: 0px;
+  padding-top:8px;
+  padding-right:5px;
+  float: left;
+}
+
+.barra h4{
+  margin-top: 0px;
+  padding-left:13px;
+  padding-right:13px;
+  padding-top:10px;
+  padding-bottom:0px;
+  float: right;
+}
+
+.barra a{
+  color: #FFFFFF;
+}
+
+.barra a:hover{
+	color:#41D1F2;
+  text-decoration: none;
+}
+
+.menu_hamburger ul li{
+  color:#41D1F2;
+  background-color: #112233 !important;
+  padding-left:25%;
+}
+
+.hamburger{
+  float:left;
+  padding-left:5px;
+  padding-top:1px;
+  cursor: pointer;
+}
+
+
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #FFFFFF;
+  margin: 6px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: rotate(-90deg) translate(-11px, 11px);
+}
+
+.change .bar2 {
+  transform: rotate(-90deg) translate(0px, 0px);
+}
+
+.change .bar3 {
+  transform: rotate(-90deg) translate(11px, -11px);
+}
+
+.footer{
+  background-color: #000000;
+  border-top:solid 2px #41D1F2;
+  height:6vh;
+}
