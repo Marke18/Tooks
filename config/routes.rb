@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'carrello/index'
   get 'login/index'
   get 'home/index'
 
