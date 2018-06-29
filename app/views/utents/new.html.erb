@@ -1,0 +1,17 @@
+
+<%= form_with scope: :utent, url: utents_path, local: true do |form| %>
+
+<% end %>
+
+<div class="new">
+  <h1>Aggiungi un utente</h1>
+
+  <%= render 'form' %>
+
+</div>
+
+
+<div class="link"><strong>
+  <%= link_to 'Utenti', utents_path  %>
+  </strong>
+</div>

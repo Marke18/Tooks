@@ -1,0 +1,17 @@
+
+<%= form_with scope: :line, url: lines_path, local: true do |form| %>
+
+<% end %>
+
+<div class="new">
+  <h1>Aggiungi una riga di ordine</h1>
+
+  <%= render 'form' %>
+
+</div>
+
+
+<div class="link"><strong>
+  <%= link_to 'Righe di ordine', lines_path  %>
+  </strong>
+</div>

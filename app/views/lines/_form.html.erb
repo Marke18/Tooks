@@ -1,0 +1,50 @@
+<%= form_with model: @line, local: true do |form| %>
+
+  <% if @line.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@line.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @line.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row with_zero_margin">
+
+    <div class="col-sm-3">
+      <p>
+        <%= form.label :ordine %><br>
+        <%= form.text_field :order_id %>
+      </p>
+    </div>
+    
+    <div class="col-sm-3">
+      <p>
+        <%= form.label :gioco %><br>
+        <%= form.text_area :game_id %>
+      </p>
+    </div>
+
+    <div class="col-sm-3">
+      <p>
+        <%= form.label :quantita %><br>
+        <%= form.text_area :quantita %>
+      </p>
+    </div>
+
+    <div class="col-sm-3">
+      <p>
+        <%= form.label :prezzo %><br>
+        <%= form.text_area :prezzo %>
+      </p>
+    </div>
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>
+  </div>

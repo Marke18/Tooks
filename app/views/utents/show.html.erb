@@ -1,0 +1,24 @@
+
+<div class="new">
+
+  <p>
+    <strong>Email:</strong>
+    <%= @utent.email %>
+  </p>
+
+  <p>
+    <strong>Password:</strong>
+    <%= @utent.password %>
+  </p>
+
+</div>
+
+<div class="link"><strong>
+  <%= link_to 'Utenti', utents_path  %>
+  <%= link_to 'Nuovo utente', new_utent_path %>
+  <%= link_to 'Modifica l\'utente', edit_utent_path(@utent) %>
+  <%= link_to 'Elimina l\'utente', utent_path(@utent),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+  </strong>
+</div>

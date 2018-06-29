@@ -35,14 +35,18 @@
 </div>
 <div class="link">
   <div class="row">
-    <div class="col-sm-5">
+    <div class="col-sm-9">
       <strong>
         <%= link_to 'Giochi', controller: 'games' %>
         <%= link_to 'Categorie', categories_path %>
-        <%= link_to 'Nuovo gioco', new_game_path %>
+        <%= link_to 'Righe di ordine', lines_path %>
+        <%= link_to 'Ordini', orders_path %>
+        <%= link_to 'Utenti', utents_path %>
+
+        <%= link_to 'Nuovo Gioco', new_game_path %>
       </strong>
     </div>
-    <div class="col-sm-7">
+    <div class="col-sm-3">
       <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-end">
           <li class="page-item disabled">

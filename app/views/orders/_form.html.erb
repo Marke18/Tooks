@@ -1,0 +1,36 @@
+<%= form_with model: @order, local: true do |form| %>
+
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@order.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @order.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row with_zero_margin">
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :utente %><br>
+        <%= form.text_field :utent_id %>
+      </p>
+    </div>
+
+    <div class="col-sm-4">
+      <p>
+        <%= form.label :data %><br>
+        <%= form.text_area :data %>
+      </p>
+    </div>
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>
+  </div>

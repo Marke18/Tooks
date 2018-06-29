@@ -1,0 +1,32 @@
+
+<div class="new">
+
+  <p>
+    <strong>Ordine:</strong>
+    <%= @line.order_id %>
+  </p>
+
+  <p>
+    <strong>Gioco:</strong>
+    <%= @line.game_id %>
+  </p>
+  <p>
+    <strong>Quantita:</strong>
+    <%= @line.quantita %>
+  </p>
+  <p>
+    <strong>Prezzo:</strong>
+    <%= @line.prezzo %>
+  </p>
+
+</div>
+
+<div class="link"><strong>
+  <%= link_to 'Righe di ordine', lines_path  %>
+  <%= link_to 'Nuova riga', new_line_path %>
+  <%= link_to 'Modifica la riga', edit_line_path(@line) %>
+  <%= link_to 'Elimina la riga', line_path(@line),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+  </strong>
+</div>

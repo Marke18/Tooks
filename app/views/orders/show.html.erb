@@ -1,0 +1,24 @@
+
+<div class="new">
+
+  <p>
+    <strong>Utente:</strong>
+    <%= @order.utent_id %>
+  </p>
+
+  <p>
+    <strong>Data:</strong>
+    <%= @order.data %>
+  </p>
+
+</div>
+
+<div class="link"><strong>
+  <%= link_to 'Ordini', orders_path  %>
+  <%= link_to 'Nuova ordine', new_order_path %>
+  <%= link_to 'Modifica l\'ordine', edit_order_path(@order) %>
+  <%= link_to 'Elimina l\'ordine', order_path(@order),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+  </strong>
+</div>

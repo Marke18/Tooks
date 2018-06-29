@@ -1,0 +1,17 @@
+
+<%= form_with scope: :order, url: orders_path, local: true do |form| %>
+
+<% end %>
+
+<div class="new">
+  <h1>Aggiungi un ordine</h1>
+
+  <%= render 'form' %>
+
+</div>
+
+
+<div class="link"><strong>
+  <%= link_to 'Ordini', orders_path  %>
+  </strong>
+</div>

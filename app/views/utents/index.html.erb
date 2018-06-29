@@ -1,23 +1,21 @@
 
 <div class="new">
-  <h1>Categorie</h1>
+    <h1>Utenti</h1>
 
   <table>
     <tr>
-      <th>Titolo</th>
-      <th>Descrizione</th>
-      <th>Immagine1</th>
+      <th>Email</th>
+      <th>Password</th>
       <th colspan="3"></th>
     </tr>
 
-    <% @categories.each do |category| %>
+    <% @utents.each do |utent| %>
       <tr>
-        <td><%= category.nome_cat %></td>
-        <td><%= category.descr %></td>
-        <td><%= category.img1 %></td>
-        <td><%= link_to 'Show', category_path(category) %></td>
-        <td><%= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%= link_to 'Destroy', category_path(category),
+        <td><%= utent.email %></td>
+        <td><%= utent.passwird %></td>
+        <td><%= link_to 'Show', utent_path(utent) %></td>
+        <td><%= link_to 'Edit', edit_utent_path(utent) %></td>
+        <td><%= link_to 'Destroy', utent_path(utent),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -30,12 +28,12 @@
     <div class="col-sm-9">
       <strong>
         <%= link_to 'Giochi', games_path %>
-        <%= link_to 'Categorie', controller: 'categories' %>
+        <%= link_to 'Categorie', categories_path %>
         <%= link_to 'Righe di ordine', lines_path %>
         <%= link_to 'Ordini', orders_path %>
-        <%= link_to 'Utenti', utents_path %>
+        <%= link_to 'Utenti', controller: 'utents' %>
 
-        <%= link_to 'Nuova Categoria', new_category_path %>
+        <%= link_to 'Nuovo Utente', new_utent_path %>
       </strong>
     </div>
     <div class="col-sm-3">

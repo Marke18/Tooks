@@ -1,0 +1,14 @@
+<%= form_with(model: @line, local: true) do |form| %>
+
+<% end %>
+
+<div class="new">
+  <h1>Modifica la riga di ordine </h1>
+
+  <%= render 'form' %>
+</div>
+
+<div class="link"><strong>
+  <%= link_to 'Righe di ordine', lines_path  %>
+  </strong>
+</div>
