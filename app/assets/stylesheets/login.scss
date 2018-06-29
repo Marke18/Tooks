@@ -1,0 +1,39 @@
+// Place all the styles related to the login controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.contain{
+  padding-top:15vh;
+  height:94vh;
+}
+
+.sfondo_bordo2{
+  background-color: #112233;
+}
+
+.blocco a{
+  color:#112233;
+}
+
+.blocco a:hover{
+  color:blue;
+}
+
+.fondo{
+  margin-top:75vh;
+  text-decoration: underline;
+  color:#808080;
+}
+
+.fondo a{
+  color:#808080;
+}
+
+.fondo a:hover{
+  color:#808080;
+}
+
+.with_zero_margin{
+  margin-left:0px !important;
+  margin-right:0px !important;
+}

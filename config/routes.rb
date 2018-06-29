@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'login/index'
   get 'home/index'
+
 
   resources :games
   resources :categories
