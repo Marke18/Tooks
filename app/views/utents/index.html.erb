@@ -12,7 +12,7 @@
     <% @utents.each do |utent| %>
       <tr>
         <td><%= utent.email %></td>
-        <td><%= utent.passwird %></td>
+        <td><%= utent.password %></td>
         <td><%= link_to 'Show', utent_path(utent) %></td>
         <td><%= link_to 'Edit', edit_utent_path(utent) %></td>
         <td><%= link_to 'Destroy', utent_path(utent),
@@ -46,9 +46,9 @@
             </a>
           </li>
           <li class="page-item active"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
+          <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+          <li class="page-item disabled">
             <a class="page-link" href="#" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
               <span class="sr-only">Next</span>
