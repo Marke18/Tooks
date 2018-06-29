@@ -1,0 +1,72 @@
+// Place all the styles related to the acquisto controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.contain{
+  padding-top:15vh;
+  min-height:94vh;
+}
+
+.bordo{
+  border:1.5px solid #000000;
+}
+
+.contain h1{
+  padding-bottom:5vh;
+  color:#112233;
+}
+
+.gioco_acquisto{
+  border:2px solid #112233;
+}
+
+.gioco_acquisto h6{
+  padding-left:1vh;
+}
+
+.gioco_acquisto strong{
+  color:#41D1F2;
+}
+
+.blocco{
+
+}
+
+.acquisto{
+  height:6vh;
+  text-align: right;
+  padding-right: 3vh;
+}
+
+.acquisto a{
+  color:#112233;
+}
+
+.acquisto a:hover{
+  color:#41D1F2;
+  text-decoration: none;
+}
+
+.totale{
+  height:6vh;
+  text-align: right;
+  padding-right: 3vh;
+}
+
+.totale strong{
+  color:#41D1F2;
+}
+
+.dati_acquisto{
+  min-height:30vh;
+}
+
+.sfondo_bordo2{
+  background-color: #112233;
+}
+
+.with_zero_margin{
+  margin-left:0px !important;
+  margin-right:0px !important;
+}

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'acquisto/index'
   get 'carrello/index'
   get 'login/index'
   get 'home/index'

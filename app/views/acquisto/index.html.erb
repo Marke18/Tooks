@@ -1,0 +1,96 @@
+
+
+<div class="row with_zero_margin">
+  <div class="col-sm-3 sfondo_bordo2"></div>
+  <div class="col-sm-6">
+    <div class="contain">
+      <h1 class="text-left">Acquisto</h1>
+
+      <div class="dati_acquisto">
+        <form>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationServer01">Nome</label>
+              <input type="text" class="form-control" id="validationServer01" placeholder="Nome" required>
+              <div class="invalid-feedback">
+                Inserire il nome
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationServer02">Cognome</label>
+              <input type="text" class="form-control" id="validationServer02" placeholder="Cognome" required>
+              <div class="invalid-feedback">
+                Inserire il cognome
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationServer04">Carta di credito</label>
+              <input type="text" class="form-control" id="validationServer04" placeholder="Carta di credito" required>
+              <div class="invalid-feedback">
+                Inserire il numero della carta
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationServer05">Codice di sicurezza</label>
+              <input type="text" class="form-control" id="validationServer05" placeholder="Codice di sicurezza" required>
+              <div class="invalid-feedback">
+                Inserire il codice
+              </div>
+            </div>
+          </div>
+
+
+          <div class="totale">
+            <h5><strong>Prezzo totale - </strong> 69.99€</h5>
+          </div>
+
+          <div class="acquisto">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              Acquista ora
+            </button>
+
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Effettuare l'acquisto?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+                    <button type="button" class="btn btn-primary" data-target="fatto">Acquista</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="fatto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Acquisto effettuato</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-target="fatto">Conferma</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 sfondo_bordo2"></div>
+</div>
