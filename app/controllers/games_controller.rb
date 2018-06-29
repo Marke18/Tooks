@@ -1,4 +1,5 @@
 class GamesController < ApplicationController
+    http_basic_authenticate_with name: "tooks", password: "818", except: [:new, :show, :edit, :create, :update, :destroy]
   def index
     @games = Game.all
   end
