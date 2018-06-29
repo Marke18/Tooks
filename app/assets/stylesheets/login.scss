@@ -11,6 +11,24 @@
   background-color: #112233;
 }
 
+.foto_login{
+  width:25vh;
+  height:25vh;
+  border: solid 1px #000000;
+  margin-top:3%;
+  margin-left:2vh;
+
+
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.blocco{
+}
+
 .blocco a{
   color:#112233;
 }
@@ -20,13 +38,13 @@
 }
 
 .fondo{
-  margin-top:75vh;
-  text-decoration: underline;
   color:#808080;
+  margin-top:75vh;
 }
 
 .fondo a{
   color:#808080;
+  text-decoration: underline;
 }
 
 .fondo a:hover{
