@@ -1,7 +1,16 @@
   <div class="negozio">
     <div class="row">
       <% @games.each do |game| %>
-        <%= render 'annuncio' %>
+        <div class="col-lg-3" style="padding-top:4vh;">
+          <img class="rounded-circle" src="/assets/tooks.jpg" width="100" height="100">
+          <div class="gioco_negozio">
+            <h6 style="padding-top:2.2vh;"><strong>Nome: </strong><%= game.nome %></h6>
+            <h6><strong>Categoria: </strong><%= game.category_id %></h6>
+            <h6><strong>Prezzo: </strong><%= game.prezzo %>€</h6>
+            <h6><strong><%= link_to 'Aggiungi al Carrello', carrello_index_path %></strong></h6>
+          </div>
+          <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-color:#112233;color:#FFFFFF;">Dettagli »</button>
+        </div>
       <% end %>
     </div>
   </div>
